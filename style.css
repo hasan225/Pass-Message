@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    background: #000f61;
+}
+
+.container {
+    background: white;
+    width: 550px;
+    height: 310px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 20px 0px lightseagreen;
+}
+
+.container h2 {
+    font-size: 22px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+form.message-form input {
+    margin: 10px 0;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+}
+
+input#message {
+    width: 480px;
+    height: 40px;
+    box-shadow: 0px 0px 10px 0px #0e32ff;
+    padding: 0 20px;
+    font-size: 16px;
+    font-weight: 500;
+}
+input#submitBtn {
+    font-size: 18px;
+    background: #000f61;
+    color: white;
+    padding: 5px 25px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: .4s;
+}
+
+input#submitBtn:hover {
+    background: #040405;
+    color: #ffffff;
+    transition: .4s;
+}
+h5.feedback {
+    font-size: 18px;
+    letter-spacing: 0.8px;
+    background: #fb5200;
+    color: white;
+    padding: 2px 20px;
+    border-radius: 5px;
+    font-weight: 500;
+    display: none;
+}
+h3.last-message {
+      margin: 10px 0;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+h3.message-content {
+    font-size: 18px;
+    font-weight: 500;
+    color: #882400;
+}
